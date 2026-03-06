@@ -1,0 +1,1 @@
+https://github.com/iskazhalgasov-ops/zakrivayuschiy-teg-f.git https://iskazhalgasov-ops.github.io/zakrivayuschiy-teg-f/
