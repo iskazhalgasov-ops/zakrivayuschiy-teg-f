@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -11,8 +14,413 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+
+    <!-- SVG-символы (дискета) -->
+    <svg class="visually-hidden" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="icon-floppy" viewBox="0 0 28 28">
+        <path d="M2 2h20l4 4v20H2V2z" fill="none" stroke="currentColor" stroke-width="2"/>
+        <rect x="6" y="2" width="12" height="8" fill="none" stroke="currentColor" stroke-width="2"/>
+        <rect x="7" y="14" width="14" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+        <rect x="10" y="3" width="2" height="5" fill="currentColor"/>
+      </symbol>
+    </svg>
+
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__logo" href="#" aria-label="Закрывающий тег">&lt;/HTML&gt;</a>
+      <h1 class="header__title">закрывающий тег</h1>
+      <nav class="header__theme-menu">
+        <ul class="theme-menu__list">
+          <li class="theme-menu__item">
+            <button class="theme-menu__button" type="button" disabled>Day</button>
+          </li>
+          <li class="theme-menu__item">
+            <button class="theme-menu__button" type="button">Auto</button>
+          </li>
+          <li class="theme-menu__item">
+            <button class="theme-menu__button" type="button">Dark</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <ul class="cards">
+
+        <!-- Карточка 1 -->
+        <li>
+          <article class="card">
+            <h2 class="card__title">Фрибур и нулевой спринт: Подготовка к работе</h2>
+            <div class="card__image-wrapper">
+              <img
+                class="card__image card__image--filter-1"
+                src="./images/card-1.jpg"
+                alt="Фургончик с едой ночью у дороги"
+                loading="lazy"
+              />
+              <span class="card__label">старт</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">
+                Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p class="card__text">Место для ваших воспоминаний о начале обучения.</p>
+              <div class="card__actions">
+                <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+                  <!-- like-icon SVG inline -->
+                  <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" aria-hidden="true">
+                    <g class="heart">
+                      <path class="core" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5Z"/>
+                      <path class="main-body" d="M18 33.5C18 33.5 3 23.5 3 13C3 7.8 7.3 3.5 12.5 3.5C15 3.5 17.3 4.5 18 5.2C18.7 4.5 21 3.5 23.5 3.5C28.7 3.5 33 7.8 33 13C33 23.5 18 33.5 18 33.5Z"/>
+                      <path class="contour" fill="var(--contour-color)" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5ZM18 6C17.1 4.7 14.6 3.5 12 3.5C6.8 3.5 2.5 7.8 2.5 13C2.5 23.6 18 33.5 18 33.5C18 33.5 33.5 23.6 33.5 13C33.5 7.8 29.2 3.5 24 3.5C21.4 3.5 18.9 4.7 18 6Z"/>
+                    </g>
+                    <g class="sparks" fill="var(--animation-fill-color)" aria-hidden="true">
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-8 -6) scale(0.5)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(14 -8) scale(0.4)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(18 6) scale(0.35)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-12 4) scale(0.35)"/>
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <!-- Карточка 2 -->
+        <li>
+          <article class="card">
+            <h2 class="card__title">1 спринт: Чистый лист</h2>
+            <div class="card__image-wrapper">
+              <img
+                class="card__image card__image--filter-2"
+                src="./images/card-2.jpg"
+                alt="Фургончик среди звёздного неба"
+                loading="lazy"
+              />
+              <span class="card__label">начало</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">
+                На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги.
+              </p>
+              <p class="card__text">Место для ваших воспоминаний о начале первого спринта.</p>
+              <div class="card__actions">
+                <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+                  <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" aria-hidden="true">
+                    <g class="heart">
+                      <path class="core" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5Z"/>
+                      <path class="main-body" d="M18 33.5C18 33.5 3 23.5 3 13C3 7.8 7.3 3.5 12.5 3.5C15 3.5 17.3 4.5 18 5.2C18.7 4.5 21 3.5 23.5 3.5C28.7 3.5 33 7.8 33 13C33 23.5 18 33.5 18 33.5Z"/>
+                      <path class="contour" fill="var(--contour-color)" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5ZM18 6C17.1 4.7 14.6 3.5 12 3.5C6.8 3.5 2.5 7.8 2.5 13C2.5 23.6 18 33.5 18 33.5C18 33.5 33.5 23.6 33.5 13C33.5 7.8 29.2 3.5 24 3.5C21.4 3.5 18.9 4.7 18 6Z"/>
+                    </g>
+                    <g class="sparks" fill="var(--animation-fill-color)" aria-hidden="true">
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-8 -6) scale(0.5)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(14 -8) scale(0.4)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(18 6) scale(0.35)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-12 4) scale(0.35)"/>
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <!-- Карточка 3 -->
+        <li>
+          <article class="card">
+            <h2 class="card__title">1 спринт: Если не получится?</h2>
+            <div class="card__image-wrapper">
+              <img
+                class="card__image card__image--filter-3"
+                src="./images/card-3.jpg"
+                alt="Фургончик в розово-фиолетовых тонах"
+                loading="lazy"
+              />
+              <span class="card__label">сомнения</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">
+                Первый проект позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
+              </p>
+              <p class="card__text">Место для ваших воспоминаний об окончании первого спринта.</p>
+              <div class="card__actions">
+                <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+                  <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" aria-hidden="true">
+                    <g class="heart">
+                      <path class="core" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5Z"/>
+                      <path class="main-body" d="M18 33.5C18 33.5 3 23.5 3 13C3 7.8 7.3 3.5 12.5 3.5C15 3.5 17.3 4.5 18 5.2C18.7 4.5 21 3.5 23.5 3.5C28.7 3.5 33 7.8 33 13C33 23.5 18 33.5 18 33.5Z"/>
+                      <path class="contour" fill="var(--contour-color)" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5ZM18 6C17.1 4.7 14.6 3.5 12 3.5C6.8 3.5 2.5 7.8 2.5 13C2.5 23.6 18 33.5 18 33.5C18 33.5 33.5 23.6 33.5 13C33.5 7.8 29.2 3.5 24 3.5C21.4 3.5 18.9 4.7 18 6Z"/>
+                    </g>
+                    <g class="sparks" fill="var(--animation-fill-color)" aria-hidden="true">
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-8 -6) scale(0.5)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(14 -8) scale(0.4)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(18 6) scale(0.35)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-12 4) scale(0.35)"/>
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <!-- Карточка 4 -->
+        <li>
+          <article class="card">
+            <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+            <div class="card__image-wrapper">
+              <img
+                class="card__image card__image--filter-4"
+                src="./images/card-4.jpg"
+                alt="Фургончик тёплых тонов на фоне деревьев"
+                loading="lazy"
+              />
+              <span class="card__label">рост</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">
+                На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим.
+              </p>
+              <p class="card__text">Место для ваших воспоминаний о начале второго спринта.</p>
+              <div class="card__actions">
+                <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+                  <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" aria-hidden="true">
+                    <g class="heart">
+                      <path class="core" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5Z"/>
+                      <path class="main-body" d="M18 33.5C18 33.5 3 23.5 3 13C3 7.8 7.3 3.5 12.5 3.5C15 3.5 17.3 4.5 18 5.2C18.7 4.5 21 3.5 23.5 3.5C28.7 3.5 33 7.8 33 13C33 23.5 18 33.5 18 33.5Z"/>
+                      <path class="contour" fill="var(--contour-color)" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5ZM18 6C17.1 4.7 14.6 3.5 12 3.5C6.8 3.5 2.5 7.8 2.5 13C2.5 23.6 18 33.5 18 33.5C18 33.5 33.5 23.6 33.5 13C33.5 7.8 29.2 3.5 24 3.5C21.4 3.5 18.9 4.7 18 6Z"/>
+                    </g>
+                    <g class="sparks" fill="var(--animation-fill-color)" aria-hidden="true">
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-8 -6) scale(0.5)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(14 -8) scale(0.4)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(18 6) scale(0.35)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-12 4) scale(0.35)"/>
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <!-- Карточка 5 -->
+        <li>
+          <article class="card">
+            <h2 class="card__title">2 спринт: К тем, кто рядом</h2>
+            <div class="card__image-wrapper">
+              <img
+                class="card__image card__image--filter-5"
+                src="./images/card-5.jpg"
+                alt="Светлый фургончик среди зелёных деревьев"
+                loading="lazy"
+              />
+              <span class="card__label">команда</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">
+                Всё это время вы были не одиноки. Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно пожаловаться, если очередной макет просто так не поддавался.
+              </p>
+              <p class="card__text">Место для ваших воспоминаний об окончании второго спринта.</p>
+              <div class="card__actions">
+                <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+                  <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" aria-hidden="true">
+                    <g class="heart">
+                      <path class="core" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5Z"/>
+                      <path class="main-body" d="M18 33.5C18 33.5 3 23.5 3 13C3 7.8 7.3 3.5 12.5 3.5C15 3.5 17.3 4.5 18 5.2C18.7 4.5 21 3.5 23.5 3.5C28.7 3.5 33 7.8 33 13C33 23.5 18 33.5 18 33.5Z"/>
+                      <path class="contour" fill="var(--contour-color)" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5ZM18 6C17.1 4.7 14.6 3.5 12 3.5C6.8 3.5 2.5 7.8 2.5 13C2.5 23.6 18 33.5 18 33.5C18 33.5 33.5 23.6 33.5 13C33.5 7.8 29.2 3.5 24 3.5C21.4 3.5 18.9 4.7 18 6Z"/>
+                    </g>
+                    <g class="sparks" fill="var(--animation-fill-color)" aria-hidden="true">
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-8 -6) scale(0.5)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(14 -8) scale(0.4)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(18 6) scale(0.35)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-12 4) scale(0.35)"/>
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <!-- Карточка 6 -->
+        <li>
+          <article class="card">
+            <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+            <div class="card__image-wrapper">
+              <img
+                class="card__image card__image--filter-6"
+                src="./images/card-6.jpg"
+                alt="Фургончик ночью на тёмном фоне"
+                loading="lazy"
+              />
+              <span class="card__label">решения</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">
+                На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.
+              </p>
+              <p class="card__text">Место для ваших воспоминаний о начале третьего спринта.</p>
+              <div class="card__actions">
+                <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+                  <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" aria-hidden="true">
+                    <g class="heart">
+                      <path class="core" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5Z"/>
+                      <path class="main-body" d="M18 33.5C18 33.5 3 23.5 3 13C3 7.8 7.3 3.5 12.5 3.5C15 3.5 17.3 4.5 18 5.2C18.7 4.5 21 3.5 23.5 3.5C28.7 3.5 33 7.8 33 13C33 23.5 18 33.5 18 33.5Z"/>
+                      <path class="contour" fill="var(--contour-color)" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5ZM18 6C17.1 4.7 14.6 3.5 12 3.5C6.8 3.5 2.5 7.8 2.5 13C2.5 23.6 18 33.5 18 33.5C18 33.5 33.5 23.6 33.5 13C33.5 7.8 29.2 3.5 24 3.5C21.4 3.5 18.9 4.7 18 6Z"/>
+                    </g>
+                    <g class="sparks" fill="var(--animation-fill-color)" aria-hidden="true">
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-8 -6) scale(0.5)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(14 -8) scale(0.4)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(18 6) scale(0.35)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-12 4) scale(0.35)"/>
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <!-- Карточка 7 -->
+        <li>
+          <article class="card">
+            <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+            <div class="card__image-wrapper">
+              <img
+                class="card__image card__image--filter-7"
+                src="./images/card-7.jpg"
+                alt="Размытый фургончик в пастельных тонах"
+                loading="lazy"
+              />
+              <span class="card__label">усталость</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">
+                Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пору сдавать, и задачи хочется порешать, и в теории лучше разобраться, и жизнь не забыть прожить.
+              </p>
+              <p class="card__text">Место для ваших воспоминаний об окончании третьего спринта.</p>
+              <div class="card__actions">
+                <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+                  <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" aria-hidden="true">
+                    <g class="heart">
+                      <path class="core" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5Z"/>
+                      <path class="main-body" d="M18 33.5C18 33.5 3 23.5 3 13C3 7.8 7.3 3.5 12.5 3.5C15 3.5 17.3 4.5 18 5.2C18.7 4.5 21 3.5 23.5 3.5C28.7 3.5 33 7.8 33 13C33 23.5 18 33.5 18 33.5Z"/>
+                      <path class="contour" fill="var(--contour-color)" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5ZM18 6C17.1 4.7 14.6 3.5 12 3.5C6.8 3.5 2.5 7.8 2.5 13C2.5 23.6 18 33.5 18 33.5C18 33.5 33.5 23.6 33.5 13C33.5 7.8 29.2 3.5 24 3.5C21.4 3.5 18.9 4.7 18 6Z"/>
+                    </g>
+                    <g class="sparks" fill="var(--animation-fill-color)" aria-hidden="true">
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-8 -6) scale(0.5)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(14 -8) scale(0.4)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(18 6) scale(0.35)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-12 4) scale(0.35)"/>
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <!-- Карточка 8 -->
+        <li>
+          <article class="card">
+            <h2 class="card__title">«Сейчас я здесь»</h2>
+            <div class="card__image-wrapper">
+              <img
+                class="card__image card__image--filter-8"
+                src="./images/card-8.jpg"
+                alt="Фургончик среди зелёных деревьев в тёплый день"
+                loading="lazy"
+              />
+              <span class="card__label">финал</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">
+                Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай, когда важен сам процесс познания.
+              </p>
+              <p class="card__text">Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
+              <div class="card__actions">
+                <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+                  <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" aria-hidden="true">
+                    <g class="heart">
+                      <path class="core" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5Z"/>
+                      <path class="main-body" d="M18 33.5C18 33.5 3 23.5 3 13C3 7.8 7.3 3.5 12.5 3.5C15 3.5 17.3 4.5 18 5.2C18.7 4.5 21 3.5 23.5 3.5C28.7 3.5 33 7.8 33 13C33 23.5 18 33.5 18 33.5Z"/>
+                      <path class="contour" fill="var(--contour-color)" d="M18 35.5C18 35.5 1.5 24.5 1.5 13C1.5 7.2 6.2 2.5 12 2.5C14.8 2.5 17.4 3.7 18 4.5C18.6 3.7 21.2 2.5 24 2.5C29.8 2.5 34.5 7.2 34.5 13C34.5 24.5 18 35.5 18 35.5ZM18 6C17.1 4.7 14.6 3.5 12 3.5C6.8 3.5 2.5 7.8 2.5 13C2.5 23.6 18 33.5 18 33.5C18 33.5 33.5 23.6 33.5 13C33.5 7.8 29.2 3.5 24 3.5C21.4 3.5 18.9 4.7 18 6Z"/>
+                    </g>
+                    <g class="sparks" fill="var(--animation-fill-color)" aria-hidden="true">
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-8 -6) scale(0.5)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(14 -8) scale(0.4)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(18 6) scale(0.35)"/>
+                      <path d="M18 2L19.2 5.5H23L20 7.7L21.2 11.2L18 9L14.8 11.2L16 7.7L13 5.5H16.8L18 2Z" transform="translate(-12 4) scale(0.35)"/>
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+      </ul>
+
+      <!-- SAVE BUTTON -->
+      <div class="save-section">
+        <button
+          class="button save-button"
+          type="button"
+          onclick="document.querySelector('.dialog').showModal()"
+        >
+          <svg class="save-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" aria-hidden="true">
+            <use href="#icon-floppy" />
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
+    </main>
+
+    <!-- DIALOG -->
+    <dialog class="dialog">
+      <div class="dialog__content">
+        <svg class="dialog__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" aria-hidden="true">
+          <use href="#icon-floppy" />
+        </svg>
+        <p class="dialog__text">
+          Вставьте дискету, чтобы продолжить
+        </p>
+      </div>
+      <button
+        class="button dialog__button"
+        type="button"
+        onclick="this.closest('dialog').close()"
+      >
+        <span class="button__text">ОК</span>
+      </button>
+    </dialog>
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>
