@@ -172,7 +172,7 @@
   transition: box-shadow 0.3s ease;
 }
 
-.button:focus {
+.button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--color-card-text);
 }
@@ -271,40 +271,35 @@
   text-transform: uppercase;
 }
 
-.card__image--filter-1 {
+.card__image--filter-sepia-warm {
   filter: sepia(0.4) contrast(1.1) brightness(1.05);
 }
 
-.card__image--filter-2 {
+.card__image--filter-hue-blue {
   filter: brightness(0.8) saturate(1.6) hue-rotate(180deg);
 }
 
-.card__image--filter-3 {
+.card__image--filter-hue-purple {
   filter: hue-rotate(270deg) saturate(2) brightness(0.9);
 }
 
-/* Карточка 4 — рост: тёплые золотистые тона */
-.card__image--filter-4 {
+.card__image--filter-sepia-gold {
   filter: sepia(0.6) saturate(1.8) brightness(1.1) contrast(1.05);
 }
 
-/* Карточка 5 — команда: мягкий зелёный, природа */
-.card__image--filter-5 {
+.card__image--filter-hue-green {
   filter: hue-rotate(80deg) saturate(1.4) brightness(1.1);
 }
 
-/* Карточка 6 — решения: тёмная ночная сцена */
-.card__image--filter-6 {
+.card__image--filter-dark {
   filter: brightness(0.6) contrast(1.3) saturate(0.8);
 }
 
-/* Карточка 7 — усталость: размытое пастельное */
-.card__image--filter-7 {
+.card__image--filter-blur-pastel {
   filter: blur(2px) brightness(1.1) saturate(0.6) contrast(0.9);
 }
 
-/* Карточка 8 — финал: летний зелёный, надежда */
-.card__image--filter-8 {
+.card__image--filter-hue-summer {
   filter: hue-rotate(60deg) saturate(1.5) brightness(1.15) contrast(1.1);
 }
 
